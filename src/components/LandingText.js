@@ -4,7 +4,7 @@ const LandingText = () => {
   return (
     <div className="landing-text">
       <h2>Please start your search</h2>
-      <h3>Your Search images will appear here</h3>
+      <h3>Your search images will appear here</h3>
     </div>
   );
 };
