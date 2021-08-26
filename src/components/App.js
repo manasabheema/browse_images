@@ -30,7 +30,7 @@ class App extends React.Component {
           {this.state.showLandingText ? <LandingText /> : null}
           {this.state.imageData === false ? (
             <div className="landing-text" style={{ color: "#F71616" }}>
-              Uff... No search found. Try something else !
+              Uff... No search results found. Try something else !
             </div>
           ) : (
             <ImageList images={this.state.images} />
