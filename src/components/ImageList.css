@@ -50,7 +50,7 @@ body{
 .landing-text{
     font-family:Georgia, 'Times New Roman', Times, serif;
     border-radius: 4px;
-    height: 60vh;
+    height: 57vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
