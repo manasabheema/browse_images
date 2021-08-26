@@ -1,0 +1,145 @@
+/* .image-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 0 10px;
+    grid-auto-rows: 10px;
+}
+
+.image-list img{
+    width: 250px;
+    grid-row-end: span 10;
+} */
+
+/* For whole background */
+.container{
+  position:relative; 
+  min-height: 98vh;
+}
+
+body{
+    padding-top: 2vh;
+    /* background-image: linear-gradient(to bottom, rgb(18, 52, 68), rgb(9, 49, 68), rgb(10, 37, 49),rgb(3, 45, 65),rgb(10, 37, 49),rgb(9, 49, 68),rgb(18, 52, 68)); */
+    background-image: linear-gradient(to bottom, #ebf1f7, #cee4f8, #c8e0f8,#cee4f8,#ebf1f7);
+}
+
+/* For Search Bar space background and size */
+
+
+.top-search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    background-image: linear-gradient(to right, 
+    #044826,
+    #087B7B, 
+    #044848, 
+    #087B7B,
+    #044826) !important;
+}
+
+.top-search h2{
+    color: mintcream;
+    background: -webkit-linear-gradient(#faeaf2, #5dfcfc,#6cfd6c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.landing-text{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border-radius: 4px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgb(63, 191, 191),rgb(97, 192, 192),rgb(65, 148, 148), rgb(30, 143, 143));
+}
+
+.search-bar label {
+    color: lightcyan !important;
+}
+
+.search-bar {
+    width : 60vw;
+}
+
+@media (max-width:500px) {
+    .search-bar{
+    width : 75vw;
+}
+}
+
+.search-bar input{
+    background-color: rgb(234, 245, 208) !important;
+}
+
+/* Editing for flex responsiveness*/
+
+.image-list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 50px !important;
+}
+
+.image-list div {
+  height: 40vh;
+  flex-grow: 1;
+}
+
+.image-list div img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+  border-radius: 1px;
+}
+
+.image-list div img:hover {
+  transform: scale(1.01);
+  object-fit: contain;
+}
+
+/*For Portrait views*/
+@media (max-aspect-ratio: 1/1) {
+  .image-list div {
+    height: 30vh;
+  }
+}
+
+/* For Short Screens*/
+@media (max-height: 480px) {
+  li {
+    height: 80vh;
+  }
+}
+/*For Smaller Screens and Portrait */
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+  .image-list {
+    flex-direction: row;
+  }
+
+  .image-list div {
+    height: auto;
+    width: 100%;
+  }
+
+  .image-list div img {
+    width: 100%;
+    max-height: 75vh;
+    min-width: 0;
+  }
+}
+/*  Footer part */
+footer{
+    text-align: center;
+    color: lightgray;
+    width: 100% !important;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to bottom,#0F9D56,#0B743F, #276445, #0B743F, #0F9D56);
+}
