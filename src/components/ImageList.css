@@ -1,30 +1,19 @@
-/* .image-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 0 10px;
-    grid-auto-rows: 10px;
-}
-
-.image-list img{
-    width: 250px;
-    grid-row-end: span 10;
-} */
 
 /* For whole background */
-.container{
-  position:relative; 
-  min-height: 98vh;
+.flex-wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 98vh;
+    justify-content:space-between;
 }
 
 body{
     padding-top: 2vh;
     /* background-image: linear-gradient(to bottom, rgb(18, 52, 68), rgb(9, 49, 68), rgb(10, 37, 49),rgb(3, 45, 65),rgb(10, 37, 49),rgb(9, 49, 68),rgb(18, 52, 68)); */
-    background-image: linear-gradient(to bottom, #ebf1f7, #cee4f8, #c8e0f8,#cee4f8,#ebf1f7);
+    background-image: linear-gradient(to bottom, #ebf1f7, #e8f1fa, #dbe8f5,#e2f0fd,#ebf1f7);
 }
 
 /* For Search Bar space background and size */
-
-
 .top-search{
     display: flex;
     flex-direction: column;
@@ -50,12 +39,12 @@ body{
 .landing-text{
     font-family:Georgia, 'Times New Roman', Times, serif;
     border-radius: 4px;
-    height: 57vh;
+    height: 45vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to bottom, rgb(63, 191, 191),rgb(97, 192, 192),rgb(65, 148, 148), rgb(30, 143, 143));
+    background-image: linear-gradient(to bottom, rgb(63, 191, 191),rgb(97, 192, 192),rgb(99, 192, 192), rgb(74, 168, 168));
 }
 
 .search-bar label {
@@ -139,7 +128,5 @@ footer{
     color: lightgray;
     width: 100% !important;
     padding: 5px;
-    position: absolute;
-    bottom: 0;
     background-image: linear-gradient(to bottom,#0F9D56,#0B743F, #276445, #0B743F, #0F9D56);
 }
